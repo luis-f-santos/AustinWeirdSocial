@@ -12,11 +12,11 @@
 		BF2B65B9233301B4004AF892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B65B8233301B4004AF892 /* AppDelegate.swift */; };
 		BF2B65BB233301B4004AF892 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B65BA233301B4004AF892 /* SignInViewController.swift */; };
 		BF2B65BE233301B4004AF892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2B65BC233301B4004AF892 /* Main.storyboard */; };
-		BF2B65C0233301B4004AF892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2B65BF233301B4004AF892 /* Assets.xcassets */; };
 		BF2B65C3233301B4004AF892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2B65C1233301B4004AF892 /* LaunchScreen.storyboard */; };
 		BF2B65CE233301B5004AF892 /* AustinWeirdSocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B65CD233301B5004AF892 /* AustinWeirdSocialTests.swift */; };
 		BF2B65D923330228004AF892 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF2B65D823330223004AF892 /* GoogleService-Info.plist */; };
 		BF2B65DA23330238004AF892 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF2B65C4233301B4004AF892 /* Info.plist */; };
+		BF2DEDAB23347A6C00BE86F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2B65BF233301B4004AF892 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -220,9 +220,9 @@
 			files = (
 				BF2B65C3233301B4004AF892 /* LaunchScreen.storyboard in Resources */,
 				BF2B65D923330228004AF892 /* GoogleService-Info.plist in Resources */,
-				BF2B65C0233301B4004AF892 /* Assets.xcassets in Resources */,
 				BF2B65DA23330238004AF892 /* Info.plist in Resources */,
 				BF2B65BE233301B4004AF892 /* Main.storyboard in Resources */,
+				BF2DEDAB23347A6C00BE86F4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
