@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12B7B4734FF6BA6E252A4486 /* Pods_AustinWeirdSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABFA6EF2E3AC053F5064BA4 /* Pods_AustinWeirdSocial.framework */; };
+		3C26717C7570FFF3088030EB /* Pods_AustinWeirdSocialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E49040F67FFB5FA0B116F19 /* Pods_AustinWeirdSocialTests.framework */; };
 		BF2B65B9233301B4004AF892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B65B8233301B4004AF892 /* AppDelegate.swift */; };
-		BF2B65BB233301B4004AF892 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B65BA233301B4004AF892 /* ViewController.swift */; };
+		BF2B65BB233301B4004AF892 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B65BA233301B4004AF892 /* SignInViewController.swift */; };
 		BF2B65BE233301B4004AF892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2B65BC233301B4004AF892 /* Main.storyboard */; };
 		BF2B65C0233301B4004AF892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2B65BF233301B4004AF892 /* Assets.xcassets */; };
 		BF2B65C3233301B4004AF892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2B65C1233301B4004AF892 /* LaunchScreen.storyboard */; };
@@ -28,9 +30,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B0C4A4F0CE901A30F96D09C /* Pods-AustinWeirdSocialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AustinWeirdSocialTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AustinWeirdSocialTests/Pods-AustinWeirdSocialTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E49040F67FFB5FA0B116F19 /* Pods_AustinWeirdSocialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AustinWeirdSocialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		595C242F3DC5527E4D474A2D /* Pods-AustinWeirdSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AustinWeirdSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AustinWeirdSocial/Pods-AustinWeirdSocial.debug.xcconfig"; sourceTree = "<group>"; };
+		7ABFA6EF2E3AC053F5064BA4 /* Pods_AustinWeirdSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AustinWeirdSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A707CCA3BB3FB9F96DE1711A /* Pods-AustinWeirdSocialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AustinWeirdSocialTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AustinWeirdSocialTests/Pods-AustinWeirdSocialTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF2B65B5233301B4004AF892 /* AustinWeirdSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AustinWeirdSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2B65B8233301B4004AF892 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF2B65BA233301B4004AF892 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF2B65BA233301B4004AF892 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		BF2B65BD233301B4004AF892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF2B65BF233301B4004AF892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF2B65C2233301B4004AF892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,6 +46,7 @@
 		BF2B65CD233301B5004AF892 /* AustinWeirdSocialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AustinWeirdSocialTests.swift; sourceTree = "<group>"; };
 		BF2B65CF233301B5004AF892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2B65D823330223004AF892 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF845CEAB999BF39F9646D29 /* Pods-AustinWeirdSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AustinWeirdSocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-AustinWeirdSocial/Pods-AustinWeirdSocial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12B7B4734FF6BA6E252A4486 /* Pods_AustinWeirdSocial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,18 +62,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C26717C7570FFF3088030EB /* Pods_AustinWeirdSocialTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		517E433FDE53F35C2EA093CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				595C242F3DC5527E4D474A2D /* Pods-AustinWeirdSocial.debug.xcconfig */,
+				BF845CEAB999BF39F9646D29 /* Pods-AustinWeirdSocial.release.xcconfig */,
+				1B0C4A4F0CE901A30F96D09C /* Pods-AustinWeirdSocialTests.debug.xcconfig */,
+				A707CCA3BB3FB9F96DE1711A /* Pods-AustinWeirdSocialTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BF2B65AC233301B4004AF892 = {
 			isa = PBXGroup;
 			children = (
 				BF2B65B7233301B4004AF892 /* AustinWeirdSocial */,
 				BF2B65CC233301B5004AF892 /* AustinWeirdSocialTests */,
 				BF2B65B6233301B4004AF892 /* Products */,
+				517E433FDE53F35C2EA093CA /* Pods */,
+				D9223DC0C760D5DDC51A638A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				BF2B65B8233301B4004AF892 /* AppDelegate.swift */,
-				BF2B65BA233301B4004AF892 /* ViewController.swift */,
+				BF2B65BA233301B4004AF892 /* SignInViewController.swift */,
 				BF2B65BC233301B4004AF892 /* Main.storyboard */,
 				BF2B65BF233301B4004AF892 /* Assets.xcassets */,
 				BF2B65C1233301B4004AF892 /* LaunchScreen.storyboard */,
@@ -100,6 +123,15 @@
 			path = AustinWeirdSocialTests;
 			sourceTree = "<group>";
 		};
+		D9223DC0C760D5DDC51A638A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ABFA6EF2E3AC053F5064BA4 /* Pods_AustinWeirdSocial.framework */,
+				4E49040F67FFB5FA0B116F19 /* Pods_AustinWeirdSocialTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF2B65D2233301B5004AF892 /* Build configuration list for PBXNativeTarget "AustinWeirdSocial" */;
 			buildPhases = (
+				30B7261BA3DB3FB3BC5939C1 /* [CP] Check Pods Manifest.lock */,
 				BF2B65B1233301B4004AF892 /* Sources */,
 				BF2B65B2233301B4004AF892 /* Frameworks */,
 				BF2B65B3233301B4004AF892 /* Resources */,
+				6FC7CD54801FC35CAE81CBDD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +158,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF2B65D5233301B5004AF892 /* Build configuration list for PBXNativeTarget "AustinWeirdSocialTests" */;
 			buildPhases = (
+				ACA1C2DC42159E2DAEA18EEF /* [CP] Check Pods Manifest.lock */,
 				BF2B65C5233301B4004AF892 /* Sources */,
 				BF2B65C6233301B4004AF892 /* Frameworks */,
 				BF2B65C7233301B4004AF892 /* Resources */,
@@ -200,12 +235,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30B7261BA3DB3FB3BC5939C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AustinWeirdSocial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FC7CD54801FC35CAE81CBDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AustinWeirdSocial/Pods-AustinWeirdSocial-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AustinWeirdSocial/Pods-AustinWeirdSocial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACA1C2DC42159E2DAEA18EEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AustinWeirdSocialTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF2B65B1233301B4004AF892 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF2B65BB233301B4004AF892 /* ViewController.swift in Sources */,
+				BF2B65BB233301B4004AF892 /* SignInViewController.swift in Sources */,
 				BF2B65B9233301B4004AF892 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +455,7 @@
 		};
 		BF2B65D3233301B5004AF892 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 595C242F3DC5527E4D474A2D /* Pods-AustinWeirdSocial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -371,6 +470,7 @@
 		};
 		BF2B65D4233301B5004AF892 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF845CEAB999BF39F9646D29 /* Pods-AustinWeirdSocial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -385,6 +485,7 @@
 		};
 		BF2B65D6233301B5004AF892 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B0C4A4F0CE901A30F96D09C /* Pods-AustinWeirdSocialTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -401,6 +502,7 @@
 		};
 		BF2B65D7233301B5004AF892 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A707CCA3BB3FB9F96DE1711A /* Pods-AustinWeirdSocialTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
