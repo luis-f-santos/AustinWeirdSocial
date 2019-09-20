@@ -17,6 +17,11 @@
 		BF2B65D923330228004AF892 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF2B65D823330223004AF892 /* GoogleService-Info.plist */; };
 		BF2B65DA23330238004AF892 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF2B65C4233301B4004AF892 /* Info.plist */; };
 		BF2DEDAB23347A6C00BE86F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2B65BF233301B4004AF892 /* Assets.xcassets */; };
+		BF2DEDB02334884900BE86F4 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2DEDAF2334884900BE86F4 /* ShadowView.swift */; };
+		BF2DEDB3233488D100BE86F4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2DEDB2233488D100BE86F4 /* Constants.swift */; };
+		BF2DEDB523348ABF00BE86F4 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2DEDB423348ABF00BE86F4 /* RoundButton.swift */; };
+		BF2DEDB723348CD300BE86F4 /* ShadowField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2DEDB623348CD300BE86F4 /* ShadowField.swift */; };
+		BF2DEDB923348E0800BE86F4 /* ShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2DEDB823348E0800BE86F4 /* ShadowButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		BF2B65CD233301B5004AF892 /* AustinWeirdSocialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AustinWeirdSocialTests.swift; sourceTree = "<group>"; };
 		BF2B65CF233301B5004AF892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2B65D823330223004AF892 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF2DEDAF2334884900BE86F4 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		BF2DEDB2233488D100BE86F4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BF2DEDB423348ABF00BE86F4 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		BF2DEDB623348CD300BE86F4 /* ShadowField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowField.swift; sourceTree = "<group>"; };
+		BF2DEDB823348E0800BE86F4 /* ShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowButton.swift; sourceTree = "<group>"; };
 		BF845CEAB999BF39F9646D29 /* Pods-AustinWeirdSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AustinWeirdSocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-AustinWeirdSocial/Pods-AustinWeirdSocial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,8 +113,11 @@
 		BF2B65B7233301B4004AF892 /* AustinWeirdSocial */ = {
 			isa = PBXGroup;
 			children = (
+				BF2DEDB1233488BF00BE86F4 /* Util */,
+				BF2DEDAE2334880100BE86F4 /* Controller */,
+				BF2DEDAD233487F900BE86F4 /* View */,
+				BF2DEDAC233487F000BE86F4 /* Model */,
 				BF2B65B8233301B4004AF892 /* AppDelegate.swift */,
-				BF2B65BA233301B4004AF892 /* SignInViewController.swift */,
 				BF2B65BC233301B4004AF892 /* Main.storyboard */,
 				BF2B65BF233301B4004AF892 /* Assets.xcassets */,
 				BF2B65C1233301B4004AF892 /* LaunchScreen.storyboard */,
@@ -121,6 +134,40 @@
 				BF2B65CF233301B5004AF892 /* Info.plist */,
 			);
 			path = AustinWeirdSocialTests;
+			sourceTree = "<group>";
+		};
+		BF2DEDAC233487F000BE86F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF2DEDAD233487F900BE86F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF2DEDAF2334884900BE86F4 /* ShadowView.swift */,
+				BF2DEDB423348ABF00BE86F4 /* RoundButton.swift */,
+				BF2DEDB623348CD300BE86F4 /* ShadowField.swift */,
+				BF2DEDB823348E0800BE86F4 /* ShadowButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF2DEDAE2334880100BE86F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF2B65BA233301B4004AF892 /* SignInViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF2DEDB1233488BF00BE86F4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BF2DEDB2233488D100BE86F4 /* Constants.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		D9223DC0C760D5DDC51A638A /* Frameworks */ = {
@@ -303,8 +350,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF2DEDB02334884900BE86F4 /* ShadowView.swift in Sources */,
+				BF2DEDB523348ABF00BE86F4 /* RoundButton.swift in Sources */,
+				BF2DEDB723348CD300BE86F4 /* ShadowField.swift in Sources */,
 				BF2B65BB233301B4004AF892 /* SignInViewController.swift in Sources */,
 				BF2B65B9233301B4004AF892 /* AppDelegate.swift in Sources */,
+				BF2DEDB923348E0800BE86F4 /* ShadowButton.swift in Sources */,
+				BF2DEDB3233488D100BE86F4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
