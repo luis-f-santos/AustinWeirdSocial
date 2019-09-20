@@ -53,6 +53,9 @@
                                     <constraint firstAttribute="height" constant="100" id="nFP-Lw-nR8"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="f"/>
+                                <connections>
+                                    <action selector="facbookButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AXy-Yk-KaJ"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="36v-dA-qVs">
                                 <rect key="frame" x="30" y="384" width="315" height="108"/>
