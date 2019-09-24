@@ -13,6 +13,10 @@ import Firebase
 
 class SignInViewController: UIViewController {
 
+    @IBOutlet weak var emailField: ShadowField!
+    
+    @IBOutlet weak var passwordField: ShadowField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -61,5 +65,40 @@ class SignInViewController: UIViewController {
         
     }
     
+    @IBAction func signInTapped(_ sender: Any) {
+        
+        if let email = emailField.text, let password = passwordField.text {
+            
+            Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
+                if error == nil {
+                    
+                    //NO errors, email and password match with firebase
+                    print("LUIS: Email user authenticated with Firebase")
+                    
+                } else {
+                    
+                    //TODO: still need to check if error is due to a wrong password entered etc...
+                    
+                    Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
+                        if error != nil {
+                            
+                            //Couldn't create a new user due to... badpassword, email doesn't exist, etc...
+                            //TODO: check error and display them to user
+                            
+                            print("LUIS: Unable to Authinticate with FireBase")
+                        } else {
+                            
+                            print("LUIS: Successfully authenticated with Firebase")
+                        }
+                        
+                    })
+                    
+                    
+                }
+            })
+        }
+        
+        
+    }
 }
 
