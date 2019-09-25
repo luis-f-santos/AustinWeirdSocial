@@ -126,11 +126,27 @@
                     <connections>
                         <outlet property="emailField" destination="ork-Fl-Bbh" id="9wD-Lj-kdj"/>
                         <outlet property="passwordField" destination="9yi-fU-O31" id="UBF-gM-37v"/>
+                        <segue destination="VVa-we-ufA" kind="show" identifier="toFeedVC" id="sVp-QI-tzm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="132.68365817091455"/>
+        </scene>
+        <!--Feed View Controller-->
+        <scene sceneID="3xM-d1-cbV">
+            <objects>
+                <viewController id="VVa-we-ufA" customClass="FeedViewController" customModule="AustinWeirdSocial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fYD-1L-Uxv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.54868101250000001" green="0.82981191239999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="dcD-Rp-jkz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xU0-GI-VHp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1012" y="133"/>
         </scene>
     </scenes>
     <resources>

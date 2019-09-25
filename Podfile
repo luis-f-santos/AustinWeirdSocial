@@ -11,6 +11,7 @@ target 'AustinWeirdSocial' do
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
   pod 'FBSDKLoginKit'
+  pod 'SwiftKeychainWrapper'
 
   target 'AustinWeirdSocialTests' do
     inherit! :search_paths
