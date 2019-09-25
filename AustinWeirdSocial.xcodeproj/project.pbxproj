@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		12B7B4734FF6BA6E252A4486 /* Pods_AustinWeirdSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABFA6EF2E3AC053F5064BA4 /* Pods_AustinWeirdSocial.framework */; };
 		3C26717C7570FFF3088030EB /* Pods_AustinWeirdSocialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E49040F67FFB5FA0B116F19 /* Pods_AustinWeirdSocialTests.framework */; };
+		BF0771C0233AF6FA008901D1 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0771BF233AF6FA008901D1 /* CircleView.swift */; };
 		BF2B65B9233301B4004AF892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B65B8233301B4004AF892 /* AppDelegate.swift */; };
 		BF2B65BB233301B4004AF892 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B65BA233301B4004AF892 /* SignInViewController.swift */; };
 		BF2B65BE233301B4004AF892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2B65BC233301B4004AF892 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		595C242F3DC5527E4D474A2D /* Pods-AustinWeirdSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AustinWeirdSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AustinWeirdSocial/Pods-AustinWeirdSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		7ABFA6EF2E3AC053F5064BA4 /* Pods_AustinWeirdSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AustinWeirdSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A707CCA3BB3FB9F96DE1711A /* Pods-AustinWeirdSocialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AustinWeirdSocialTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AustinWeirdSocialTests/Pods-AustinWeirdSocialTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF0771BF233AF6FA008901D1 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		BF2B65B5233301B4004AF892 /* AustinWeirdSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AustinWeirdSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2B65B8233301B4004AF892 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF2B65BA233301B4004AF892 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				BF2DEDB423348ABF00BE86F4 /* RoundButton.swift */,
 				BF2DEDB623348CD300BE86F4 /* ShadowField.swift */,
 				BF2DEDB823348E0800BE86F4 /* ShadowButton.swift */,
+				BF0771BF233AF6FA008901D1 /* CircleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF0771C0233AF6FA008901D1 /* CircleView.swift in Sources */,
 				BF2DEDB02334884900BE86F4 /* ShadowView.swift in Sources */,
 				BF2DEDB523348ABF00BE86F4 /* RoundButton.swift in Sources */,
 				BF2DEDB723348CD300BE86F4 /* ShadowField.swift in Sources */,
