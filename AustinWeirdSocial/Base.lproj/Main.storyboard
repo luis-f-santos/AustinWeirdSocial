@@ -208,15 +208,15 @@
                                     <constraint firstAttribute="height" constant="65" id="uMb-2h-b02"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zNB-2W-TEG">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zNB-2W-TEG">
                                 <rect key="frame" x="0.0" y="182" width="375" height="485"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="335" id="H0e-iK-0ke">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="335" id="H0e-iK-0ke" customClass="PostCell" customModule="AustinWeirdSocial" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="335"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H0e-iK-0ke" id="UDx-aG-ZJW">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="334.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="335"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T54-qc-RGf" customClass="ShadowView" customModule="AustinWeirdSocial" customModuleProvider="target">
@@ -228,7 +228,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="na2-qk-TMV">
                                                                     <rect key="frame" x="0.0" y="0.0" width="327" height="49"/>
                                                                     <subviews>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="FfL-vA-0If">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="FfL-vA-0If" customClass="CircleView" customModule="AustinWeirdSocial" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="49" id="JDn-QZ-vsK"/>
@@ -251,11 +251,14 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="JJz-ed-eqm">
-                                                                    <rect key="frame" x="0.0" y="56" width="327" height="152"/>
+                                                                    <rect key="frame" x="0.0" y="56" width="327" height="151"/>
                                                                 </imageView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ipI-fl-toZ">
-                                                                    <rect key="frame" x="0.0" y="215" width="327" height="59"/>
+                                                                    <rect key="frame" x="0.0" y="214" width="327" height="60"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="dq8-E0-gwQ"/>
+                                                                    </constraints>
                                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -264,7 +267,9 @@
                                                             <constraints>
                                                                 <constraint firstItem="na2-qk-TMV" firstAttribute="top" secondItem="lCU-iM-aUJ" secondAttribute="top" id="Ssw-gG-v2c"/>
                                                                 <constraint firstAttribute="trailing" secondItem="na2-qk-TMV" secondAttribute="trailing" id="Zdh-pd-gvR"/>
+                                                                <constraint firstItem="ipI-fl-toZ" firstAttribute="leading" secondItem="lCU-iM-aUJ" secondAttribute="leading" id="aBL-8R-L3i"/>
                                                                 <constraint firstItem="na2-qk-TMV" firstAttribute="leading" secondItem="lCU-iM-aUJ" secondAttribute="leading" id="baz-hv-9xS"/>
+                                                                <constraint firstAttribute="trailing" secondItem="ipI-fl-toZ" secondAttribute="trailing" id="epk-KX-KTy"/>
                                                             </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Zgb-dD-slB">
@@ -273,13 +278,13 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ji-MW-ZBb">
                                                                     <rect key="frame" x="0.0" y="0.0" width="39.5" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.87" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="102" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRk-ik-Hxw">
                                                                     <rect key="frame" x="46.5" y="0.0" width="28" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.87" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -296,6 +301,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.54868101250000001" green="0.82981191239999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="T54-qc-RGf" secondAttribute="bottom" constant="8" id="2mC-oY-M1x"/>
                                                 <constraint firstAttribute="trailing" secondItem="T54-qc-RGf" secondAttribute="trailing" constant="16" id="81Y-2f-yc6"/>
@@ -303,6 +309,13 @@
                                                 <constraint firstItem="T54-qc-RGf" firstAttribute="top" secondItem="UDx-aG-ZJW" secondAttribute="top" constant="8" id="uaW-dq-3ky"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="caption" destination="ipI-fl-toZ" id="JfZ-KD-p72"/>
+                                            <outlet property="likesLbl" destination="eRk-ik-Hxw" id="0BP-Db-ClD"/>
+                                            <outlet property="postImg" destination="JJz-ed-eqm" id="1nO-dH-0Wd"/>
+                                            <outlet property="profileImg" destination="FfL-vA-0If" id="QGC-99-iMz"/>
+                                            <outlet property="userNameLbl" destination="cMB-O3-Jd8" id="eG8-E3-uku"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -322,6 +335,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VQV-tr-Htj"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="zNB-2W-TEG" id="uM4-ai-VI1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xU0-GI-VHp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
