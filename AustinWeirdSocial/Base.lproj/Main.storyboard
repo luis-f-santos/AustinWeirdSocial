@@ -144,12 +144,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBb-KM-QCT" customClass="ShadowView" customModule="AustinWeirdSocial" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="vjY-BC-EBF">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="vjY-BC-EBF">
                                         <rect key="frame" x="16" y="28" width="40" height="35"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="Mmx-mk-Jpg"/>
                                             <constraint firstAttribute="height" constant="35" id="ajQ-hJ-4dT"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="z41-wV-EXC" appends="YES" id="0eq-RN-q51"/>
+                                        </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9L-Kb-PMR">
                                         <rect key="frame" x="159.5" y="30" width="56" height="31.5"/>
@@ -199,7 +203,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.81176470588235294" green="0.85882352941176465" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="jfi-8a-Hsh" firstAttribute="top" secondItem="Lbe-1T-sHY" secondAttribute="top" constant="8" id="3fA-oF-94v"/>
                                     <constraint firstItem="jfi-8a-Hsh" firstAttribute="leading" secondItem="Lbe-1T-sHY" secondAttribute="leading" constant="8" id="XAF-On-7ZI"/>
@@ -337,9 +341,15 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="zNB-2W-TEG" id="uM4-ai-VI1"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="I7T-Es-pf2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xU0-GI-VHp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="z41-wV-EXC">
+                    <connections>
+                        <action selector="signOutTapped:" destination="VVa-we-ufA" id="jhN-p4-1V9"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1012" y="132.68365817091455"/>
         </scene>

@@ -33,5 +33,15 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
     }
+    
+    
+    @IBAction func signOutTapped(_ sender: AnyObject) {
+        
+        let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
+        print("LUIS: ID removed from keychain \(keychainResult)")
+        try! Auth.auth().signOut()
+        performSegue(withIdentifier: "goToSignIn", sender: nil)
+        
+    }
 
 }
