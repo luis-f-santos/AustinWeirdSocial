@@ -10,23 +10,27 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
-class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
     
     @IBOutlet weak var tableView: UITableView!
     
     var posts = [Post]()
+    var imagePicker: UIImagePickerController!
+    static var imageCache: NSCache<NSString, UIImage> = NSCache()
     
+    @IBOutlet weak var addedImage: CircleView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.delegate = self
         tableView.dataSource = self
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.delegate = self
 
         DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
-            
-            print(snapshot.value)
             
             if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
                 
@@ -60,8 +64,17 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
             
-            cell.configureCell(post: post)
-            return cell
+            if let img = FeedViewController.imageCache.object(forKey: post.imageUrl as NSString) {
+                
+                cell.configureCell(post: post, img: img)
+                return cell
+                
+            } else {
+                
+                cell.configureCell(post: post)
+                return cell
+            }
+
         } else {
             
             return PostCell()
@@ -70,6 +83,27 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         //return tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
     }
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+            addedImage.image = image
+        }else {
+            print("LUIS: An invalid Image has been selected")
+        }
+        
+        imagePicker.dismiss(animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func addImageTapped(_ sender: Any) {
+        
+        present(imagePicker, animated: true, completion: nil)
+        
+    }
+    @IBAction func postButtonTapped(_ sender: Any) {
+        
+        
+    }
     
     @IBAction func signOutTapped(_ sender: AnyObject) {
         

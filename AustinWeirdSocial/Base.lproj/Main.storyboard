@@ -177,13 +177,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jfi-8a-Hsh">
                                         <rect key="frame" x="8" y="8" width="327" height="49"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="PPE-yc-feK" customClass="CircleView" customModule="AustinWeirdSocial" customModuleProvider="target">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="PPE-yc-feK" customClass="CircleView" customModule="AustinWeirdSocial" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
                                                 <color key="backgroundColor" red="0.46302476529999997" green="0.22325526179999999" blue="0.6432393193" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="49" id="FI6-4X-SfB"/>
                                                     <constraint firstAttribute="height" constant="49" id="w7v-7j-ZBy"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="ARz-Km-Xag" appends="YES" id="Dfc-8b-VRs"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LX9-Tm-ViQ">
                                                 <rect key="frame" x="59" y="0.0" width="209" height="49"/>
@@ -199,6 +203,9 @@
                                                     <constraint firstAttribute="width" constant="49" id="urc-Ta-C0D"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="add-post"/>
+                                                <connections>
+                                                    <action selector="postButtonTapped:" destination="VVa-we-ufA" eventType="touchUpInside" id="5fA-dT-4Ud"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -256,6 +263,9 @@
                                                                 </stackView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="JJz-ed-eqm">
                                                                     <rect key="frame" x="0.0" y="56" width="327" height="151"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="350" id="o6B-Fz-m1i"/>
+                                                                    </constraints>
                                                                 </imageView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ipI-fl-toZ">
                                                                     <rect key="frame" x="0.0" y="214" width="327" height="60"/>
@@ -340,6 +350,7 @@
                         <viewLayoutGuide key="safeArea" id="VQV-tr-Htj"/>
                     </view>
                     <connections>
+                        <outlet property="addedImage" destination="PPE-yc-feK" id="tg8-k5-pLT"/>
                         <outlet property="tableView" destination="zNB-2W-TEG" id="uM4-ai-VI1"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="I7T-Es-pf2"/>
                     </connections>
@@ -348,6 +359,11 @@
                 <tapGestureRecognizer id="z41-wV-EXC">
                     <connections>
                         <action selector="signOutTapped:" destination="VVa-we-ufA" id="jhN-p4-1V9"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ARz-Km-Xag">
+                    <connections>
+                        <action selector="addImageTapped:" destination="VVa-we-ufA" id="jmB-mz-tyW"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
